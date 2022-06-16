@@ -1,7 +1,7 @@
 {
-    "name": "ymcatwincities/openy",
+    "name": "YCloudYUSA/yusaopeny",
     "type": "drupal-profile",
-    "description": "Open Y distribution",
+    "description": "Y USA Open Y distribution",
     "license": "GPL-2.0-or-later",
     "require": {
         "php": ">=7.4",
