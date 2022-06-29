@@ -1,71 +1,139 @@
 <p align="center">
- <!-- Will replace with new Open Y logo soon. <a href="https://openy.org">
-    <img alt="Open Y Logo" src="" width="144">
-  </a> -->
+  <a href="https://ycloud.y.org/open-y-association-websites">
+    <img alt="react-router" src="https://www.ymcanorth.org/themes/custom/ymca/img/ymca-logo.svg" width="144">
+  </a>
 </p>
 
 <h3 align="center">
-  Open Y on Drupal 9
+  Y USA Open YMCA
 </h3>
 <p align="center">
-  https://openy.org
+  https://ycloud.y.org/open-y-association-websites
 </p>
 <p align="center">
-  An open source platform for YMCAs, by YMCAs built on <a href="https://drupal.org">Drupal</a>, ReactJS, Vue.js and others.
-</p>
-
-<p align="center">
-This code distribution is minimally maintained while primary code development transitions to Y USA. For more details visit https://openy.org and https://ycloud.y.org/
+  An open source platform for YMCAs, by YMCAs built on <a href="https://drupal.org">Drupal</a>.
 </p>
 
 <p align="center">
-  <a href="https://packagist.org/packages/ymcatwincities/openy"><img src="https://img.shields.io/packagist/v/ymcatwincities/openy.svg?style=flat-square"></a>
-  <a href="https://packagist.org/packages/ymcatwincities/openy"><img src="https://img.shields.io/packagist/dm/ymcatwincities/openy.svg?style=flat-square"></a>
+  <a href="https://packagist.org/packages/ycloudyusa/yusaopeny-project"><img src="https://img.shields.io/packagist/v/ycloudyusa/yusaopeny-project.svg?style=flat-square"></a>
+  <a href="https://packagist.org/packages/ycloudyusa/yusaopeny-project"><img src="https://img.shields.io/packagist/dm/ycloudyusa/yusaopeny-project.svg?style=flat-square"></a>
 </p>
 
 ***
 
-The Open Y platform is a content management system that uses Drupal 9 functionality and useful modules from YMCAs and digital partners. It’s easy and free to use — everyone is welcome to implement Open Y and run Open Y projects.
+The [Y USA Open Y Project](https://ycloud.y.org/open-y-association-websites) is a composer based installer for the [Y USA Open Y distribution](https://github.com/YCloudYUSA/yusaopeny).
 
-# Demo
-You can always evaluate distribution by visiting demo website - http://sandboxes-d9.openy.org. To get admin credentials to the sandbox - please [visit page for details](https://community.openymca.org/t/how-can-i-try-or-get-a-demo-of-open-y/318).
 
-![Open Y Sandbox](docs/assets/sandbox.gif "Open Y Demo")
+## Requirements
 
-*\* Open Y version 1.3.*
+#### Composer    
+If you do not have [Composer](http://getcomposer.org/), you may install it by following the [official instructions](https://getcomposer.org/download/). For usage, see [the documentation](https://getcomposer.org/doc/).
 
-# Installation
+## Installation
 
-### Prerequisites
-
-- Installed [Composer](https://getcomposer.org/download/)
-
-### Installation of Open Y
-We are using [composer](https://getcomposer.org/) for initiating new project tree.
-
-Development version of Open Y on Drupal 9
-```sh
-composer create-project ymcatwincities/openy-project:dev-9.2.x-development OPENY --no-interaction
+#### Latest STABLE version
+```
+composer create-project ycloudyusa/yusaopeny-project MY_PROJECT --no-interaction
+cd MY_PROJECT
 ```
 
-Stable version of Open Y on Drupal 9
-```sh
-composer create-project ymcatwincities/openy-project OPENY --no-interaction
+
+
+#### Latest DEVELOPMENT version (Drupal 9 2.x)
+```
+composer create-project ycloudyusa/yusaopeny-project:9.2.x-development-dev MY_PROJECT --no-interaction --no-dev
+cd MY_PROJECT
 ```
 
-In order to properly install Open Y Distribution, we have separate composer project - [openy-project](https://github.com/ymcatwincities/openy-project). Please read detailed installation instructions [here](https://github.com/ymcatwincities/openy-project).
+This command will build project based on the [**Drupal 9 development branch**](https://github.com/ycloudyusa/yusaopeny/commits/9.x-2.x) release.
 
-# Development
-For development environment please read documentation [openy-project](https://github.com/ymcatwincities/openy-project#development-environment).
+See https://youtu.be/jRlinjpTl0c how to video for the whole process of this command usage.
 
-Other development information you can find at [docs/Development](https://docs.openy.org/docs/development/).
 
+## Development environment
+
+You should use composer command without `--no-dev` if you would like to get environment that was configured especially for OpenY. This means you'd remove Vagrant/Docksal from the code tree.
+So it should look like this:
+
+```
+composer create-project ycloudyusa/yusaopeny-project:9.2.x-development-dev MY_PROJECT --no-interaction
+cd MY_PROJECT
+```
+
+See https://youtu.be/jRlinjpTl0c how to video for the whole process of this command usage.
+=======
+
+
+### CIBox VM
+[CIBox VM](http://cibox.tools) allows you to make a contribution into OpenY in a few minutes. Just follow steps and then you'll know how to do it.
+
+- [Pre Requirements](https://github.com/ymcatwincities/openy-cibox-vm#pre-requirements)
+- [Installation](https://github.com/ymcatwincities/openy-cibox-vm#usage)
+- [Local build](https://github.com/ymcatwincities/openy-cibox-vm#reinstall-options)
+  
+Read more details on [CIBox VM](https://github.com/ymcatwincities/openy-cibox-vm) repo.
+
+### Docksal
+[Docksal](http://docksal.io) is a tool for defining and managing development environments.
+
+- [How to develop](https://github.com/ymcatwincities/openy-docksal#how-to-develop)
+- [How to run behat tests](https://github.com/ymcatwincities/openy-docksal#how-to-run-behat-tests)
+  
+Read more details on [Docksal](https://github.com/ymcatwincities/openy-docksal) repo.
+
+# Use Fork for the development
+
+All development happens in the [Open Y Drupal 9 installation profile](https://github.com/ymcatwincities/openy). In order to start development:
+
+1. Create fork of [Open Y installation profile](https://github.com/YCloudYUSA/yusaopeny)
+2. Add your repository to `composer.json`
+```
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/GITHUB_USERNAME/yusaopeny"
+    }
+]
+```
+
+3. Change a version for `ycloudyusa/yusaopeny` to `dev-9.x-2.x` or any other branch. E.g.:
+- branch name "bugfix" - version name `dev-bugfix`
+- branch name "feature/workflow" - version name `dev-feature/workflow`
+
+```
+"require": {
+    "ycloudyusa/yusaopeny": "dev-9.x-2.x",
+}
+```
+```
+"require": {
+    "ycloudyusa/yusaopeny": "dev-feature/workflow",
+}
+```
+
+4. Run `composer update` to update packages
+5. Add and commits changes in `docroot/profiles/contrib/openy`. Now it should be pointed to your fork.
+
+# Directory structure
+| Directory | Purpose |
+|-----------|---------|
+| [**Y USA Open Y**](https://github.com/ycloudyusa/yusaopeny) ||
+| `docroot/` | Contains Drupal core |
+| `docroot/profiles/contrib/openy/` | Contains Open Y distribution |
+| `vendor/` | Contains Y USA Open Y distribution |
+| `composer.json` | Contains Y USA Open Y distribution |
+| [**CIBox VM**](https://github.com/ymcatwincities/openy-cibox-vm) + [**CIBox Build**](https://github.com/ymcatwincities/openy-cibox-build)  ||
+| `cibox/` | Contains CIBox libraries |
+| `docroot/devops/` | DevOps scripts for the installation process |
+| `provisioning/` | Vagrant configuration |
+| `docroot/*.sh` | Bash scripts to trigger reinstall scripts
+| `docroot/*.yml` | YAML playbooks for the installation process |
+| `Vagrantfile` | Vagrant index file |
+| [**Docksal**](https://github.com/ymcatwincities/openy-docksal) ||
+| `.docksal/` | Docksal configuration |
+| `build.sh` | Build script for Docksal environment |
 
 # Documentation
-- [Wiki](https://docs.openy.org/docs/wiki/)
-- [Documentation](https://docs.openy.org/docs/)
-- [Installation instructions](https://github.com/ymcatwincities/openy-project#installation)
-- [Content structure](https://docs.openy.org/docs/content-structure/)
-- [Technical documentation](https://docs.openy.org/docs/development/)
-- [Terms of Use](https://docs.openy.org/docs/wiki/open-y-terms-of-use/)
-- [Participation Agreement](https://docs.openy.org/docs/wiki/open-y-participant-agreement/)
+Documentation about Open Y is available at [docs](https://github.com/YCloudYUSA/yusaopeny_docs). For details please visit [https://ycloud.y.org/open-y-association-websites](https://ycloud.y.org/open-y-association-websites).
+# License
+Y USA OpenY Project is licensed under the [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0-standalone.en.html). See the [License file](https://github.com/YCloudYUSA/yusaopeny-project/blob/9.2.x/LICENSE) for details.
