@@ -147,7 +147,7 @@
         "open-y-subprojects/openy_docs": "dev-main"
     },
     "replace": {
-        "ymcatwincities/openy": "*"
+        "ymcatwincities/openy": "9.2.11.3"
     },
     "config": {
         "bin-dir": "bin/",
