@@ -146,6 +146,9 @@
         "drush/drush": "^10.5.0 || ^11",
         "open-y-subprojects/openy_docs": "dev-main"
     },
+    "replace": {
+        "ymcatwincities/openy": "*"
+    },
     "config": {
         "bin-dir": "bin/",
         "sort-packages": true
