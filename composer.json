@@ -1,13 +1,13 @@
 {
-    "name": "ymcatwincities/openy",
+    "name": "ycloudyusa/yusaopeny",
     "type": "drupal-profile",
-    "description": "Open Y distribution",
+    "description": "Y USA Open Y distribution",
     "license": "GPL-2.0-or-later",
     "require": {
         "php": ">=7.4",
         "composer/installers": "^1.2 || ^1.9",
         "cweagans/composer-patches": "^1.5.0",
-        "doctrine/inflector": "1.2.* || ^2",
+        "doctrine/inflector": "^1.2 || ^2",
         "drupal/address": "^1.8",
         "drupal/advanced_help_block": "^1.0",
         "drupal/activenet": "^1.0",
@@ -145,6 +145,9 @@
         "consolidation/robo": "^1.1.5 || ^2",
         "drush/drush": "^10.5.0 || ^11",
         "open-y-subprojects/openy_docs": "dev-main"
+    },
+    "replace": {
+        "ymcatwincities/openy": "9.2.11.3"
     },
     "config": {
         "bin-dir": "bin/",
