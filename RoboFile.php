@@ -14,7 +14,7 @@ class RoboFile extends \Robo\Tasks {
    */
   function OpenyCreateProject($path) {
     $this->taskComposerCreateProject()
-      ->source('ymcatwincities/openy-project:9.2.x-init-dev')
+      ->source('YCloudYUSA/yusaopeny-project:9.2.x-init-dev')
       ->target($path . '/openy-project')
       ->ansi(TRUE)
       ->dev()
@@ -53,7 +53,7 @@ class RoboFile extends \Robo\Tasks {
   function OpenySetBranch($path, $branch) {
     $this->taskComposerRequire()
       ->dir($path . '/openy-project')
-      ->dependency('ymcatwincities/openy', $branch)
+      ->dependency('YCloudYUSA/yusaopeny', $branch)
       ->dev()
       ->ansi(TRUE)
       ->run();
