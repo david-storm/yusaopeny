@@ -235,6 +235,9 @@
             },
             "drupal/easy_breadcrumb": {
                 "Fix PHP 8.1 deprecations": "https://git.drupalcode.org/project/easy_breadcrumb/-/merge_requests/42.patch"
+            },
+            "drupal/verf": {
+                "https://dgo.re/3100599 Unpublished content should show nothing in options instead of showing Restricted Access": "https://www.drupal.org/files/issues/2021-09-15/verf-add-access-control-3100599-16.patch"
             }
         }
     },
