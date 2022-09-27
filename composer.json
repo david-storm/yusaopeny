@@ -93,7 +93,7 @@
         "drupal/twig_tweak": "^2 || ^3.1",
         "drupal/tzfield": "^1.3",
         "drupal/vendor_stream_wrapper": "^2.0.1",
-        "drupal/verf": "1.0-beta7 || ^1.0",
+        "drupal/verf": "^2.0",
         "drupal/video": "^1.5 || ^3",
         "drupal/video_embed_field": "^2.0",
         "drupal/views_block_filter_block": "^1.2",
@@ -241,9 +241,6 @@
             },
             "drupal/easy_breadcrumb": {
                 "Fix PHP 8.1 deprecations": "https://git.drupalcode.org/project/easy_breadcrumb/-/merge_requests/42.patch"
-            },
-            "drupal/verf": {
-                "https://dgo.re/3100599 Unpublished content should show nothing in options instead of showing Restricted Access": "https://www.drupal.org/files/issues/2021-09-15/verf-add-access-control-3100599-16.patch"
             }
         }
     },
