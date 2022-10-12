@@ -115,6 +115,7 @@ helpers:
     - openy_mappings
     - openy_migrate
     - openy_socrates
+    - media_library_bulk_upload
 
 activenet:
   name: 'Integration: ActiveNet'
