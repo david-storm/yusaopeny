@@ -170,7 +170,7 @@
     "extra": {
         "drupal-lenient": {
             "allowed-list": [
-                "drupal/verf"
+                "drupal/easy_breadcrumb"
             ]
         },
         "drupal-scaffold": {
