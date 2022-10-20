@@ -140,7 +140,6 @@
         "open-y-subprojects/openy_features": "^1.5.14",
         "open-y-subprojects/openy_content_core": "^1.1",
         "open-y-subprojects/common_scss": "dev-main",
-        "symfony/console": "^4.4.30 || ^5 || ^6",
         "mglaman/composer-drupal-lenient": "*"
     },
     "require-dev": {
