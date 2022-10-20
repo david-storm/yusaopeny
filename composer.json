@@ -172,7 +172,7 @@
             "allowed-list": {
                 "drupal/verf"
             }
-        }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "docroot/"
