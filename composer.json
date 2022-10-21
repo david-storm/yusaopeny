@@ -122,7 +122,6 @@
         "npm-asset/jquery-ui-touch-punch": "^0.2.3",
         "npm-asset/slick-carousel": "^1.8",
         "oomphinc/composer-installers-extender": "^1.1 || ^2.0.0",
-        "symfony/dom-crawler": "~2.8 || ~3.0 || ~4.2",
         "ymcatwincities/media_entity_document": "*",
         "ycloudyusa/yusaopeny_activity_finder": "^4.0 || ^4.1.4",
         "ymcatwincities/ymca_sync": "^8 || ^10",
