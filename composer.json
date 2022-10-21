@@ -84,7 +84,7 @@
         "drupal/scheduler": "^1 || ^2.0@RC || ^2",
         "drupal/search_api": "1.17 || ^1.19",
         "drupal/search_api_solr": "^4.1 || ^4.2",
-        "drupal/simple_menu_icons": "^2.2",
+        "drupal/simple_menu_icons": "^2.2 || ^3",
         "drupal/simple_sitemap": "^3.7 || ^4.1",
         "drupal/slick": "^2",
         "drupal/slick_views": "^2",
