@@ -57,7 +57,7 @@
         "drupal/jquery_ui_touch_punch": "^1.0",
         "drupal/jquery_ui_tabs": "^1.1",
         "drupal/jquery_ui_tooltip": "^1.1",
-        "drupal/libraries": "^3.0@beta || ^3.0",
+        "drupal/libraries": "^3.0 || ^4.0",
         "drupal/link_attributes": "^1",
         "drupal/media_directories": "^2",
         "drupal/media_library_bulk_upload": "^1.0",
