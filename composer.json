@@ -1,7 +1,7 @@
 {
     "name": "ycloudyusa/yusaopeny",
     "type": "drupal-profile",
-    "description": "Y USA Open Y distribution",
+    "description": "YMCA Website Services Drupal distribution",
     "license": "GPL-2.0-or-later",
     "require": {
         "php": ">=7.4",
