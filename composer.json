@@ -1,7 +1,7 @@
 {
     "name": "ycloudyusa/yusaopeny",
     "type": "drupal-profile",
-    "description": "Y USA Open Y distribution",
+    "description": "YMCA Website Services Drupal distribution",
     "license": "GPL-2.0-or-later",
     "require": {
         "php": ">=7.4",
@@ -63,6 +63,7 @@
         "drupal/media_directories": "^2",
         "drupal/media_entity_image": "^1.4@RC || ^1.4",
         "drupal/media_entity_video": "^2.0@RC || ^2.0",
+        "drupal/media_library_bulk_upload": "^1.0",
         "drupal/metatag": "^1",
         "drupal/migrate_plus": "^5 || ^6",
         "drupal/migrate_source_csv": "^3",
@@ -212,7 +213,9 @@
             "drupal/core": {
                 "1236098 - Notice: Undefined index in _color_rewrite_stylesheet()": "https://www.drupal.org/files/issues/undefined-index-in-_color_rewrite_stylesheet-1236098-37.patch",
                 "2484693 - Telephone Link field formatter InvalidArgumentException with 5 digits or fewer in the number": "https://www.drupal.org/files/issues/2484693-54.patch",
-                "2862702 - PrepareModulesEntityUninstallForm::formTitle does not exist": "https://www.drupal.org/files/issues/2862702-3.patch"
+                "2862702 - PrepareModulesEntityUninstallForm::formTitle does not exist": "https://www.drupal.org/files/issues/2862702-3.patch",
+                "2245767 - Allow blocks to be configured to show/hide on 403/404 pages": "https://www.drupal.org/files/issues/2021-11-29/2245767-93.patch",
+                "2925890 - Invalid config structures can result in exceptions when saving a config entity": "https://www.drupal.org/files/issues/2022-02-08/2925890-54.patch"
             },
             "drupal/media_entity": {
                 "2918172 - Media Entity upgrade -> add revision fields": "https://www.drupal.org/files/issues/2918172-5.patch",

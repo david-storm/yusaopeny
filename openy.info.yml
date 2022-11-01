@@ -1,10 +1,10 @@
-name: Y USA Open Y
+name: YMCA Website Services
 type: profile
-description: 'Y USA Open Y Drupal distribution.'
+description: 'YMCA Website Services Drupal distribution.'
 core_version_requirement: ^9 || ^10
-version: '9.x-2.11.5'
+version: '9.x-2.12'
 distribution:
-  name: Y USA Open Y
+  name: YMCA Website Services
   install:
     theme: openy_admin
 php: 8.1
