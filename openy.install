@@ -1208,3 +1208,10 @@ function openy_update_8090() {
     \Drupal::service('module_installer')->uninstall(['openy_analytics']);
     \Drupal::service('module_installer')->uninstall(['openy_update']);
 }
+
+/**
+ * Enable admin_toolbar_tools module.
+ */
+function openy_update_8091() {
+  \Drupal::service('module_installer')->install(['admin_toolbar_tools']);
+}
