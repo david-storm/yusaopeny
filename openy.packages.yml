@@ -116,6 +116,7 @@ helpers:
     - openy_migrate
     - openy_socrates
     - media_library_bulk_upload
+    - protected_pages
 
 activenet:
   name: 'Integration: ActiveNet'
