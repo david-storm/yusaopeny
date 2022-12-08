@@ -84,7 +84,7 @@ class TermsOfUseForm extends FormBase {
 
     $form['llc'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('YMCA of the USA supports the Open Y platform with respect to use by its Member Associations but is not responsible for and does not control the services provided by 3rd party agencies, which are using and modifying Website Services distribution.'),
+      '#title' => $this->t('YMCA of the USA supports the Open Y platform with respect to use by its Member Associations but is not responsible for and does not control the services provided by 3rd party agencies, which are using and modifying YMCA Website Service distribution.'),
       '#default_value' => ($isAccepted) ? 1 : 0,
       '#weight' => 2,
       '#disabled' => ($isAccepted) ? 1 : 0,
@@ -100,7 +100,7 @@ class TermsOfUseForm extends FormBase {
 
     $form['acknowledge'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('I acknowledge that Website Services is open source content and that all content is provided “as is” without any warranty of any kind. YMCA of the USA makes no warranty that its services will meet your requirements, be safe, secure, uninterrupted, timely, accurate, or error-free, or that your information will be secure. YMCA of the USA will not maintain and support Website Services templates indefinitely. The entire risk as to the quality and performance of the content is with you.'),
+      '#title' => $this->t('I acknowledge that YMCA Website Service is open source content and that all content is provided “as is” without any warranty of any kind. YMCA of the USA makes no warranty that its services will meet your requirements, be safe, secure, uninterrupted, timely, accurate, or error-free, or that your information will be secure. YMCA of the USA will not maintain and support YMCA Website Service templates indefinitely. The entire risk as to the quality and performance of the content is with you.'),
       '#default_value' => ($isAccepted) ? 1 : 0,
       '#weight' => 4,
       '#disabled' => ($isAccepted) ? 1 : 0,
@@ -108,7 +108,7 @@ class TermsOfUseForm extends FormBase {
 
     $form['obtaining'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('YMCA of the USA recommends obtaining a reputable agency to assist with the implementation of the Website Services platform and further development for your specific needs.'),
+      '#title' => $this->t('YMCA of the USA recommends obtaining a reputable agency to assist with the implementation of the YMCA Website Service platform and further development for your specific needs.'),
       '#default_value' => ($isAccepted) ? 1 : 0,
       '#weight' => 5,
       '#disabled' => ($isAccepted) ? 1 : 0,
@@ -204,7 +204,7 @@ class TermsOfUseForm extends FormBase {
       $config->set('analytics_optin', 1);
       $config->save();
 
-      $this->messenger->addMessage($this->t('Website Services Terms and Conditions have been accepted.'));
+      $this->messenger->addMessage($this->t('YMCA Website Service Terms and Conditions have been accepted.'));
       $form_state->setRedirect('openy_system.openy_terms_and_conditions');
     }
   }
