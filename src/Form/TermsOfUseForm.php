@@ -114,16 +114,9 @@ class TermsOfUseForm extends FormBase {
       '#disabled' => ($isAccepted) ? 1 : 0,
     ];
 
-    $form['optional'] = [
-      '#type' => 'html_tag',
-      '#tag' => 'h1',
-      '#weight' => 6,
-      '#value' => $this->t('Optional Permissions'),
-    ];
-
     $form['agree_openy_terms'] = [
       '#type' => 'hidden',
-      '#weight' => 7,
+      '#weight' => 6,
     ];
 
     if (!$isAccepted) {
@@ -149,7 +142,7 @@ class TermsOfUseForm extends FormBase {
     } else {
       $form['submit'] = [
         '#type' => 'submit',
-        '#value' => $this->t('Update optional permissions'),
+        '#value' => $this->t('Accept Terms and Conditions'),
         '#weight' => 15,
         '#button_type' => 'primary'
       ];
