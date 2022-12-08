@@ -15,7 +15,7 @@ class TermsOfUseForm extends FormBase {
   /**
    * The current version of Terms of Use.
    */
-  const TERMS_OF_USE_VERSION = '2.0';
+  const TERMS_OF_USE_VERSION = '2.1';
 
   /**
    * The Messenger service.
@@ -73,7 +73,7 @@ class TermsOfUseForm extends FormBase {
 
     $form['participant'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('We agree to the <a target="_blank" href="@openy-participant-agreement">Open Y Participant Agreement</a> and <a target="_blank" href="@terms-of-use">Terms of Use</a>', [
+      '#title' => $this->t('We agree to the <a target="_blank" href="@openy-participant-agreement">Participant Agreement</a> and <a target="_blank" href="@terms-of-use">Terms of Use</a>', [
         '@openy-participant-agreement' => 'https://github.com/ymcatwincities/openy/wiki/Open-Y-Participant-Agreement',
         '@terms-of-use' => 'https://github.com/ymcatwincities/openy/wiki/Open-Y-Terms-of-Use',
       ]),
@@ -84,7 +84,7 @@ class TermsOfUseForm extends FormBase {
 
     $form['llc'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('Open Y, LLC is a separate entity established by YMCA of the Greater Twin Cities to support and amplify digital collaboration among YMCA associations. YUSA supports the Open Y platform with respect to use by its Member Associations but is not responsible for and does not control the services provided by Open Y, LLC.'),
+      '#title' => $this->t('YUSA supports the Open Y platform with respect to use by its Member Associations but is not responsible for and does not control the services provided by 3rd party agencies, which are using and modifying Website Services distribution.'),
       '#default_value' => ($isAccepted) ? 1 : 0,
       '#weight' => 2,
       '#disabled' => ($isAccepted) ? 1 : 0,
@@ -92,7 +92,7 @@ class TermsOfUseForm extends FormBase {
 
     $form['privacy'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('Open Y recommends that each participating YMCA association develop and implement its own cybersecurity policies and obtain cyber liability and data privacy insurance.'),
+      '#title' => $this->t('YUSA recommends that each participating YMCA association develop and implement its own cybersecurity policies and obtain cyber liability and data privacy insurance.'),
       '#default_value' => ($isAccepted) ? 1 : 0,
       '#weight' => 3,
       '#disabled' => ($isAccepted) ? 1 : 0,
@@ -100,7 +100,7 @@ class TermsOfUseForm extends FormBase {
 
     $form['acknowledge'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('I acknowledge that Open Y is open source content and that all content is provided “as is” without any warranty of any kind. Open Y makes no warranty that its services will meet your requirements, be safe, secure, uninterrupted, timely, accurate, or error-free, or that your information will be secure. Open Y will not maintain and support Open Y templates indefinitely. The entire risk as to the quality and performance of the content is with you.'),
+      '#title' => $this->t('I acknowledge that Website Services is open source content and that all content is provided “as is” without any warranty of any kind. YUSA makes no warranty that its services will meet your requirements, be safe, secure, uninterrupted, timely, accurate, or error-free, or that your information will be secure. YUSA will not maintain and support Website Services templates indefinitely. The entire risk as to the quality and performance of the content is with you.'),
       '#default_value' => ($isAccepted) ? 1 : 0,
       '#weight' => 4,
       '#disabled' => ($isAccepted) ? 1 : 0,
@@ -108,7 +108,7 @@ class TermsOfUseForm extends FormBase {
 
     $form['obtaining'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('Open Y recommends obtaining a reputable agency to assist with the implementation of the Open Y platform and further development for your specific needs.'),
+      '#title' => $this->t('YUSA recommends obtaining a reputable agency to assist with the implementation of the Website Services platform and further development for your specific needs.'),
       '#default_value' => ($isAccepted) ? 1 : 0,
       '#weight' => 5,
       '#disabled' => ($isAccepted) ? 1 : 0,
@@ -121,16 +121,9 @@ class TermsOfUseForm extends FormBase {
       '#value' => $this->t('Optional Permissions'),
     ];
 
-    $form['analytics'] = [
-      '#type' => 'checkbox',
-      '#title' => $this->t('DEPRECATED. To be removed in Q4 2021. We agree to share non-sensitive analytics information including, but not limited to, webpage URL, Open Y version number, enabled website components, with Open Y, LLC in order to improve the platform experience for all YMCA association users. This data will be for informational use only and will not be sold to any party, or distributed to any non-YMCA entity by Open Y, LLC.'),
-      '#default_value' => ($analytics) ? 1 : 0,
-      '#weight' => 7,
-    ];
-
     $form['agree_openy_terms'] = [
       '#type' => 'hidden',
-      '#weight' => 8,
+      '#weight' => 7,
     ];
 
     if (!$isAccepted) {
@@ -218,7 +211,7 @@ class TermsOfUseForm extends FormBase {
       $config->set('analytics_optin', 1);
       $config->save();
 
-      $this->messenger->addMessage($this->t('Open Y Terms and Conditions have been accepted.'));
+      $this->messenger->addMessage($this->t('Website Services Terms and Conditions have been accepted.'));
       $form_state->setRedirect('openy_system.openy_terms_and_conditions');
     }
   }
