@@ -84,7 +84,7 @@ class TermsOfUseForm extends FormBase {
 
     $form['llc'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('YMCA of the USA supports the Open Y platform with respect to use by its Member Associations but is not responsible for and does not control the services provided by 3rd party agencies, which are using and modifying YMCA Website Service distribution.'),
+      '#title' => $this->t('YMCA of the USA supports the Website Services platform with respect to use by its Member Associations but is not responsible for and does not control the services provided by 3rd party agencies, which are using and modifying YMCA Website Service distribution.'),
       '#default_value' => ($isAccepted) ? 1 : 0,
       '#weight' => 2,
       '#disabled' => ($isAccepted) ? 1 : 0,
@@ -185,7 +185,7 @@ class TermsOfUseForm extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    // The form is used on Open Y installation and in admin back-office.
+    // The form is used on Website Services installation and in admin back-office.
     // We can't save acceptance flag to the database during installation,
     // because form is displayed very early and db is not configured yet.
     if (isset($GLOBALS['install_state'])) {
