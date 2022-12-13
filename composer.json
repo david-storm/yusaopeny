@@ -141,6 +141,7 @@
         "open-y-subprojects/openy_features": "^1.5.12",
         "open-y-subprojects/openy_content_core": "^1.1",
         "open-y-subprojects/common_scss": "dev-main",
+        "ycloudyusa/y_lb": "dev-main || ^0",
         "symfony/console": "^4.4.30 || ^5"
     },
     "require-dev": {
