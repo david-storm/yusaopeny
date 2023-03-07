@@ -134,14 +134,14 @@
         "ynorth-projects/openy_repeat": "^1 || ^2.0.6",
         "ynorth-projects/openy_node_session": "^0.9 || ^1.1.0",
         "open-y-subprojects/openy_custom": "^1.0",
-
         "open-y-subprojects/openy_hours_formatter": "^1.2",
         "open-y-subprojects/openy_features": "^1.5.14",
         "open-y-subprojects/openy_content_core": "^1.1",
         "open-y-subprojects/common_scss": "dev-main",
         "open-y-subprojects/openy_daxko_gxp_syncer": "^1.2",
         "ycloudyusa/y_lb": "^1",
-        "symfony/console": "^4.4.30 || ^5"
+        "symfony/console": "^4.4.30 || ^5",
+        "symfony/dom-crawler": "^6.2"
     },
     "require-dev": {
         "consolidation/robo": "^1.1.5 || ^2",
@@ -208,19 +208,15 @@
                 "2845037 - Fixed the issue of Call to a member function getConfigDependencyKey() on null on [Widget view], and [SelectionDisplay view]": "https://www.drupal.org/files/issues/2845037_15.patch",
                 "3104901 - Entity Browser used in a entity referenced field of a layout builder custom block is not working": "https://www.drupal.org/files/issues/2020-10-16/3104901-17.patch"
             },
-            "drupal/entity_embed": {
-                "Add BC layer for entity_embed 1.1 for https://www.drupal.org/project/entity_embed/issues/2511404#comment-12129724": "https://gist.githubusercontent.com/podarok/47b9e38df6570a31d1ea87fea250d6c2/raw/d1435211dffe31cb6206d360e1d99f44c0deddee/entity_embed_1_1_bc_link_to.patch"
-            },
             "drupal/plugin": {
-                "2647312 - Use SubFormState in plugin selectors": "https://www.drupal.org/files/issues/2020-07-22/2647312-32.patch",
-                "PHP 8.1 deprecations": "https://git.drupalcode.org/project/plugin/-/merge_requests/2.patch"
+                "2647312 - Use SubFormState in plugin selectors": "https://www.drupal.org/files/issues/2020-07-22/2647312-32.patch"
             },
             "drupal/core": {
                 "1236098 - Notice: Undefined index in _color_rewrite_stylesheet()": "https://www.drupal.org/files/issues/undefined-index-in-_color_rewrite_stylesheet-1236098-37.patch",
                 "2484693 - Telephone Link field formatter InvalidArgumentException with 5 digits or fewer in the number": "https://www.drupal.org/files/issues/2484693-54.patch",
                 "2862702 - PrepareModulesEntityUninstallForm::formTitle does not exist": "https://www.drupal.org/files/issues/2862702-3.patch",
-                "2245767 - Allow blocks to be configured to show/hide on 403/404 pages": "https://www.drupal.org/files/issues/2021-11-29/2245767-93.patch",
-                "2925890 - Invalid config structures can result in exceptions when saving a config entity": "https://www.drupal.org/files/issues/2022-02-08/2925890-54.patch"
+                "2245767 - Allow blocks to be configured to show/hide on 403/404 pages": "https://www.drupal.org/files/issues/2023-03-02/2245767-159.patch",
+                "2925890 - Invalid config structures can result in exceptions when saving a config entity": "https://www.drupal.org/files/issues/2022-08-22/2925890-54.patch"
             },
             "drupal/media_entity": {
                 "2918172 - Media Entity upgrade -> add revision fields": "https://www.drupal.org/files/issues/2918172-5.patch",
@@ -236,18 +232,12 @@
             "drupal/jquery_colorpicker": {
                 "Use library directory instead vendor": "https://gist.githubusercontent.com/manachynskyi/3b059456ce97dd4380ff0c0e85f41696/raw/4cf7103c75849b2b474424fe9d8ad969192dd779/library_path_update.patch"
             },
-            "drupal/field_group": {
-                "3059614 - Fixed Undefined property: stdClass::$region in field_group_form_process()": "https://www.drupal.org/files/issues/2020-06-15/3059614-37.patch"
-            },
             "drupal/colorapi": {
                 "3171235 - Add Value property": "https://www.drupal.org/files/issues/2020-09-16/3171235-2.patch",
                 "Update colorapi configs": "https://gist.githubusercontent.com/manachynskyi/a24c7898a0ed051bc077fc94cc2dc2e8/raw/9524fa2d630d2ee0e0e39316156612b33c854182/colorapi_config_patch.patch"
             },
             "drupal/video_embed_field": {
                 "Issue #3215817: Presentational attributes such as 'border', 'align', or 'bgcolor' are used. CSS should be used for styling instead.": "https://git.drupalcode.org/project/video_embed_field/-/merge_requests/3.diff"
-            },
-            "drupal/easy_breadcrumb": {
-                "Fix PHP 8.1 deprecations": "https://git.drupalcode.org/project/easy_breadcrumb/-/merge_requests/42.patch"
             }
         }
     },
