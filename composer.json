@@ -134,7 +134,6 @@
         "ynorth-projects/openy_repeat": "^1 || ^2.0.6",
         "ynorth-projects/openy_node_session": "^0.9 || ^1.1.0",
         "open-y-subprojects/openy_custom": "^1.0",
-
         "open-y-subprojects/openy_hours_formatter": "^1.2",
         "open-y-subprojects/openy_features": "^1.5.14",
         "open-y-subprojects/openy_content_core": "^1.1",
@@ -142,7 +141,8 @@
         "open-y-subprojects/openy_daxko_gxp_syncer": "^1.2",
         "ycloudyusa/y_lb": "^1",
         "ycloudyusa/y_lb_demo_content": "^1 || dev-main",
-        "symfony/console": "^4.4.30 || ^5"
+        "symfony/console": "^4.4.30 || ^5",
+        "symfony/dom-crawler": "^6.2"
     },
     "require-dev": {
         "consolidation/robo": "^1.1.5 || ^2",
@@ -216,7 +216,6 @@
                 "1236098 - Notice: Undefined index in _color_rewrite_stylesheet()": "https://www.drupal.org/files/issues/undefined-index-in-_color_rewrite_stylesheet-1236098-37.patch",
                 "2484693 - Telephone Link field formatter InvalidArgumentException with 5 digits or fewer in the number": "https://www.drupal.org/files/issues/2484693-54.patch",
                 "2862702 - PrepareModulesEntityUninstallForm::formTitle does not exist": "https://www.drupal.org/files/issues/2862702-3.patch",
-                "2245767 - Allow blocks to be configured to show/hide on 403/404 pages": "https://www.drupal.org/files/issues/2023-03-02/2245767-159.patch",
                 "2925890 - Invalid config structures can result in exceptions when saving a config entity": "https://www.drupal.org/files/issues/2022-08-22/2925890-54.patch"
             },
             "drupal/media_entity": {
