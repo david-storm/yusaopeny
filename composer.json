@@ -140,6 +140,7 @@
         "open-y-subprojects/common_scss": "dev-main",
         "open-y-subprojects/openy_daxko_gxp_syncer": "^1.2",
         "ycloudyusa/y_lb": "^1",
+        "ycloudyusa/y_lb_demo_content": "^1 || dev-main",
         "symfony/console": "^4.4.30 || ^5",
         "symfony/dom-crawler": "^6.2"
     },
