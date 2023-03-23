@@ -37,7 +37,7 @@ dependencies:
   - drupal:path
   - drupal:path_alias
   # - drupal:quickedit
-  - drupal:rdf
+  # - drupal:rdf
   - drupal:shortcut
   - drupal:system
   - drupal:taxonomy
