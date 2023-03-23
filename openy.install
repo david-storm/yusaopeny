@@ -131,7 +131,7 @@ function openy_update_8003() {
  * Fix tour config dependencies.
  */
 function openy_update_8004() {
-  $config = drupal_get_path('theme', 'openy_rose') . '/config/optional/tour.tour.openy-theme-overview.yml';
+  $config = \Drupal::service('extension.list.theme')->getPath('openy_rose') . '/config/optional/tour.tour.openy-theme-overview.yml';
   $config_importer = \Drupal::service('openy_upgrade_tool.param_updater');
   $config_importer->update($config, 'tour.tour.openy-theme-overview', 'dependencies');
 }
@@ -166,7 +166,7 @@ function openy_update_8006() {
  * Add user and main menu blocks to sidebar region.
  */
 function openy_update_8008() {
-  $config_dir = drupal_get_path('profile', 'openy') . '/config/optional';
+  $config_dir = \Drupal::service('extension.list.profile')->getPath('openy') . '/config/optional';
   $config_importer = \Drupal::service('openy_upgrade_tool.importer');
   $config_importer->setDirectory($config_dir);
   $config_importer->importConfigs([
@@ -579,7 +579,7 @@ function openy_update_8043() {
  * Add breadcrumbs block to Breadcrumb region and set easy_breadcrumb settings.
  */
 function openy_update_8044() {
-  $config_dir = drupal_get_path('profile', 'openy') . '/config/install';
+  $config_dir = \Drupal::service('extension.list.profile')->getPath('openy') . '/config/install';
   $config_importer = \Drupal::service('openy_upgrade_tool.importer');
   $config_importer->setDirectory($config_dir);
   $config_importer->importConfigs([
@@ -733,7 +733,7 @@ function openy_update_8049() {
   foreach ($updatedFields as $module => $configs) {
     foreach ($configs as $config_name => $fields) {
       foreach ($fields as $field) {
-        $config = drupal_get_path('module', $module);
+        $config = \Drupal::service('extension.list.module')->getPath($module);
         $config .= '/config/install/';
         $config .= $config_name . '.yml';
         $config_importer->update($config, $config_name, $field);
@@ -782,7 +782,7 @@ function openy_update_8051() {
   foreach ($themes_list as $theme) {
     foreach ($update_fields as $field) {
       $config_name = $theme . '.settings';
-      $config = drupal_get_path('theme', $theme);
+      $config = \Drupal::service('extension.list.theme')->getPath($theme);
       $config .= '/config/install/';
       $config .= $config_name . '.yml';
 
@@ -858,7 +858,7 @@ function openy_update_8055() {
  */
 function openy_update_8056() {
   $config_importer = \Drupal::service('openy_upgrade_tool.importer');
-  $openyMapConfigDir = drupal_get_path('module', 'openy_map') . '/config/install';
+  $openyMapConfigDir = \Drupal::service('extension.list.module')->getPath('openy_map') . '/config/install';
   $config_importer->setDirectory($openyMapConfigDir);
   $config_importer->importConfigs([
     'openy_map.settings',
@@ -897,7 +897,7 @@ function openy_update_8058() {
     // Skip this update if module disabled.
     return;
   }
-  $config_dir = drupal_get_path('module', 'openy_node_alert') . '/config/install/';
+  $config_dir = \Drupal::service('extension.list.module')->getPath('openy_node_alert') . '/config/install/';
   $config_importer = \Drupal::service('openy_upgrade_tool.importer');
   $config_importer->setDirectory($config_dir);
   $config_importer->importConfigs([
@@ -1026,7 +1026,7 @@ function openy_update_8068() {
  */
 function openy_update_8069() {
   if (\Drupal::service('theme_handler')->themeExists('openy_carnation')) {
-    $config = drupal_get_path('theme', 'openy_carnation') . '/config/install/openy_carnation.settings.yml';
+    $config = \Drupal::service('extension.list.theme')->getPath('openy_carnation') . '/config/install/openy_carnation.settings.yml';
     /** @var Drupal\openy_upgrade_tool\ConfigParamUpgradeTool $config_importer */
     $config_importer = \Drupal::service('openy_upgrade_tool.param_updater');
     $config_importer->update($config, 'openy_carnation.settings', 'display_search_form');
@@ -1037,7 +1037,7 @@ function openy_update_8069() {
  * Import config with T&C.
  */
 function openy_update_8070() {
-  $config_dir = drupal_get_path('profile', 'openy') . '/config/optional';
+  $config_dir = \Drupal::service('extension.list.profile')->getPath('openy') . '/config/optional';
   $config_importer = \Drupal::service('openy_upgrade_tool.importer');
   $config_importer->setDirectory($config_dir);
   $config_importer->importConfigs([
@@ -1104,7 +1104,7 @@ function openy_update_8077() {
  * Enable openy analytics module
  */
 function openy_update_8078() {
-  $config = drupal_get_path('profile', 'openy') . '/config/optional/openy.terms_and_conditions.schema.yml';
+  $config = \Drupal::service('extension.list.profile')->getPath('openy') . '/config/optional/openy.terms_and_conditions.schema.yml';
   /** @var Drupal\openy_upgrade_tool\ConfigParamUpgradeTool $config_importer */
   $config_importer = \Drupal::service('openy_upgrade_tool.param_updater');
   $config_importer->update($config, 'openy.terms_and_conditions.schema', 'analytics');
@@ -1124,7 +1124,7 @@ function openy_update_8079() {
   ];
   foreach ($themes_list as $theme) {
     if (\Drupal::service('theme_handler')->themeExists($theme)) {
-      $config = drupal_get_path('theme', $theme) . '/config/install/' . $theme . '.settings.yml';
+      $config = \Drupal::service('extension.list.theme')->getPath($theme) . '/config/install/' . $theme . '.settings.yml';
       /** @var Drupal\openy_upgrade_tool\ConfigParamUpgradeTool $config_importer */
       $config_importer = \Drupal::service('openy_upgrade_tool.param_updater');
       $config_importer->update($config, $theme . '.settings', 'search_query_key');
@@ -1189,7 +1189,7 @@ function openy_update_8087() {
   ];
   foreach ($themes_list as $theme) {
     if (\Drupal::service('theme_handler')->themeExists($theme)) {
-      $config = drupal_get_path('theme', $theme) . '/config/install/' . $theme . '.settings.yml';
+      $config = \Drupal::service('extension.list.theme')->getPath($theme) . '/config/install/' . $theme . '.settings.yml';
       /** @var Drupal\openy_upgrade_tool\ConfigParamUpgradeTool $config_importer */
       $config_importer = \Drupal::service('openy_upgrade_tool.param_updater');
       $config_importer->update($config, $theme . '.settings', 'display_search_form');

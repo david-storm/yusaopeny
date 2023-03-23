@@ -55,7 +55,7 @@ class ThemeSelectForm extends FormBase {
    * @return mixed
    */
   public static function getOpenyThemes() {
-    $path = drupal_get_path('profile', 'openy');
+    $path = \Drupal::service('extension.list.profile')->getPath('openy');
     $themes = Yaml::decode(file_get_contents($path . '/openy.themes.yml'));
     return $themes;
   }

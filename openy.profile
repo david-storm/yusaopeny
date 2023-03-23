@@ -731,7 +731,7 @@ function openy_terms_of_use(&$install_state) {
   // because profile is not installed.
   // That's why we should include T&C form manually.
   if (!class_exists('\Drupal\openy\Form\TermsOfUseForm')) {
-    $path = drupal_get_path('profile', 'openy');
+    $path = \Drupal::service('extension.list.profile')->getPath('openy');
     require_once $path . '/src/Form/TermsOfUseForm.php';
   }
 

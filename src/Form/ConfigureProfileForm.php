@@ -30,7 +30,7 @@ class ConfigureProfileForm extends FormBase {
    * @return mixed
    */
   public static function getInstallationTypes($include_hidden = FALSE) {
-    $path = drupal_get_path('profile', 'openy');
+    $path = \Drupal::service('extension.list.profile')->getPath('openy');
     $installation_types = Yaml::decode(file_get_contents($path . '/openy.installation_types.yml'));
 
     foreach ($installation_types as $key => $installation_type) {
@@ -48,7 +48,7 @@ class ConfigureProfileForm extends FormBase {
    * @return mixed
    */
   public static function getPackages() {
-    $path = drupal_get_path('profile', 'openy');
+    $path = \Drupal::service('extension.list.profile')->getPath('openy');
     $packages = Yaml::decode(file_get_contents($path . '/openy.packages.yml'));
     // Demo content package should be hidden.
     if (isset($packages['demo'])) {
