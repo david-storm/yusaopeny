@@ -140,7 +140,7 @@
         "open-y-subprojects/openy_daxko_gxp_syncer": "^1.2",
         "ycloudyusa/y_lb": "^1 | dev-d10",
         "symfony/console": "^4.4.30 || ^5",
-        "drupal/csv_serialization": "^3.0@beta || ^3"
+        "drupal/csv_serialization": "^3.0@beta || ^3",
         "ycloudyusa/y_lb_demo_content": "^1 || dev-main",
         "symfony/dom-crawler": "^6.2"
     },
