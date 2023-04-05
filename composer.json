@@ -58,7 +58,7 @@
         "drupal/jquery_ui_tooltip": "^2.0",
         "drupal/libraries": "^3.0 || ^4.0",
         "drupal/link_attributes": "^1",
-        "drupal/media_directories": "^2.1 || 2.1.x-dev@dev",
+        "drupal/media_directories": "^2.1 || dev-2.1.x#be2e8ce",
         "drupal/media_library_bulk_upload": "^1.0",
         "drupal/metatag": "^1",
         "drupal/migrate_plus": "^5 || ^6",
