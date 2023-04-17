@@ -43,7 +43,7 @@
         "drupal/entity_clone": "^1.0 || ^2.0@alpha || ^2",
         "drupal/entity_embed": "^1.2 || 1.x-dev#3184cd06637e02b397c20b50c53c19835a843d21 || 1.x-dev@dev",
         "drupal/entity_reference_revisions": "^1.6",
-        "drupal/features": "3.8 || ^3.11 || 5.0.x-dev@dev",
+        "drupal/features": "5.0.x-dev@dev || ^5.0@alpha || ^5.0",
         "drupal/field_group": "^3.0",
         "drupal/focal_point": "^2.0@alpha || ^2",
         "drupal/fontyourface": "^3.3 || 3.x-dev@dev",
