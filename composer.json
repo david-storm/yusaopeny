@@ -3,7 +3,6 @@
     "type": "drupal-profile",
     "description": "YMCA Website Services Drupal distribution",
     "license": "GPL-2.0-or-later",
-    "require": {
         "php": ">=7.4",
         "composer/installers": "^1.2 || ^1.9",
         "cweagans/composer-patches": "^1.5.0",
@@ -135,7 +134,7 @@
         "ynorth-projects/openy_repeat": "^1 || ^2.0.6",
         "ynorth-projects/openy_node_session": "^0.9 || ^1.1.0",
         "open-y-subprojects/openy_custom": "^1.2",
-        "open-y-subprojects/openy_hours_formatter": "^1.2",
+        "open-y-subprojects/openy_hours_formatter": "^2.0",
         "open-y-subprojects/openy_features": "^2.0.1",
         "open-y-subprojects/openy_content_core": "^1.1",
         "open-y-subprojects/common_scss": "dev-main",
