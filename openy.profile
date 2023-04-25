@@ -390,6 +390,7 @@ function openy_import_content(array &$install_state) {
 function openy_set_frontpage(array &$install_state) {
   // Set homepage by node id but checking it first by title only.
   $query = \Drupal::entityQuery('node')
+    ->accessCheck(FALSE)
     ->condition('status', 1)
     ->condition('title', 'YMCA Website Services');
   $nids = $query->execute();
