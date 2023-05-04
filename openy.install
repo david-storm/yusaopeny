@@ -77,14 +77,14 @@ function openy_update_dependencies() {
       'system' => 8805,
     ],
   ];
-  
+
   // Run jquery_colorpicker_update_8200 after colorapi enabled.
   $dependencies['jquery_colorpicker'] = [
     8200 => [
       'openy_txnm_color' => 8005,
     ],
   ];
-  
+
   return $dependencies;
 }
 
@@ -222,7 +222,7 @@ function openy_update_8012() {
   \Drupal::service('module_installer')->install([
     'metatag',
     'redirect',
-    'simple_sitemap'
+    'simple_sitemap',
   ]);
 
   // Set the frontpage to be canonical url instead of alias. We expect node to be there.
@@ -266,7 +266,7 @@ function openy_update_8015() {
     'openy_moderation_wrapper',
     'openy_session_instance',
     'openy_schedules',
-    'openy_prgf_schedule_search'
+    'openy_prgf_schedule_search',
   ]);
 }
 
@@ -350,7 +350,7 @@ function openy_update_8023() {
   \Drupal::service('module_installer')->install([
     'openy_popups',
     'openy_prgf_branches_popup_all',
-    'openy_prgf_branches_popup_class'
+    'openy_prgf_branches_popup_class',
   ]);
 }
 
@@ -410,7 +410,7 @@ function openy_update_8029() {
     'openy_prgf_group_schedules',
   ]);
   \Drupal::service('module_installer')->install([
-    'groupex_form_cache'
+    'groupex_form_cache',
   ]);
 }
 
@@ -863,7 +863,7 @@ function openy_update_8056() {
   $config_importer->importConfigs([
     'openy_map.settings',
     'views.view.locations',
-    ]);
+  ]);
 }
 
 /**
@@ -1033,7 +1033,7 @@ function openy_update_8069() {
   }
 }
 
- /**
+/**
  * Import config with T&C.
  */
 function openy_update_8070() {
@@ -1050,7 +1050,7 @@ function openy_update_8070() {
  */
 function openy_update_8075() {
   $modules = [
-    'openy_update'
+    'openy_update',
   ];
   foreach ($modules as $module) {
     \Drupal::service('module_installer')->install([
@@ -1065,7 +1065,7 @@ function openy_update_8075() {
 function openy_update_8076() {
   $modules = [
     'image_widget_crop',
-    'openy_focal_point'
+    'openy_focal_point',
   ];
   foreach ($modules as $module) {
     \Drupal::service('module_installer')->install([
@@ -1082,7 +1082,7 @@ function openy_update_8077() {
   $configs = [
     'optimizely.settings',
     'lndr.settings',
-    'tour.tour.tour-lndr'
+    'tour.tour.tour-lndr',
   ];
   foreach ($configs as $config) {
     $config = \Drupal::configFactory()->getEditable($config);
@@ -1091,7 +1091,7 @@ function openy_update_8077() {
   \Drupal::database()->schema()->dropTable('optimizely');
   \Drupal::database()->delete('key_value')
     ->condition('collection', 'system.schema')
-    ->condition('name', ['optimizely', 'lndr'] , 'IN')
+    ->condition('name', ['optimizely', 'lndr'], 'IN')
     ->execute();
 
   $config = \Drupal::configFactory()->getEditable('core.extension');
@@ -1101,7 +1101,7 @@ function openy_update_8077() {
 }
 
 /**
- * Enable openy analytics module
+ * Enable openy analytics module.
  */
 function openy_update_8078() {
   $config = \Drupal::service('extension.list.profile')->getPath('openy') . '/config/optional/openy.terms_and_conditions.schema.yml';
@@ -1146,7 +1146,7 @@ function openy_update_8080() {
 function openy_update_8081() {
   $modules = [
     'link_attributes',
-    'editor_advanced_link'
+    'editor_advanced_link',
   ];
   foreach ($modules as $module) {
     \Drupal::service('module_installer')->install([
@@ -1176,7 +1176,7 @@ function openy_update_8084() {
  * Uninstall openy_autocomplete_path module.
  */
 function openy_update_8086() {
-    \Drupal::service('module_installer')->uninstall(['openy_autocomplete_path']);
+  \Drupal::service('module_installer')->uninstall(['openy_autocomplete_path']);
 }
 
 /**
@@ -1201,12 +1201,12 @@ function openy_update_8087() {
  * Uninstall openy_analytics and openy_update modules.
  */
 function openy_update_8090() {
-    $config = \Drupal::service('config.factory')->getEditable('openy.terms_and_conditions.schema');
-    $config->set('analytics', FALSE);
-    $config->set('analytics_optin', FALSE);
-    $config->save();
-    \Drupal::service('module_installer')->uninstall(['openy_analytics']);
-    \Drupal::service('module_installer')->uninstall(['openy_update']);
+  $config = \Drupal::service('config.factory')->getEditable('openy.terms_and_conditions.schema');
+  $config->set('analytics', FALSE);
+  $config->set('analytics_optin', FALSE);
+  $config->save();
+  \Drupal::service('module_installer')->uninstall(['openy_analytics']);
+  \Drupal::service('module_installer')->uninstall(['openy_update']);
 }
 
 /**
