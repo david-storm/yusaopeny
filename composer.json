@@ -70,7 +70,7 @@
         "drupal/migrate_tools": "^5.0 || ^6",
         "drupal/openy_addthis": "^1.0",
         "drupal/openy_branch_selector": "^1.0.3",
-        "drupal/openy_carnation": "^1.1 || ^2 || ^2.0@RC",
+        "drupal/openy_carnation": "^2 || ^3",
         "drupal/openy_daxko2": "^1.0",
         "drupal/openy_er": "^1.0",
         "drupal/openy_gtranslate": "^1.0",
