@@ -2,7 +2,7 @@ name: YMCA Website Services
 type: profile
 description: 'YMCA Website Services Drupal distribution.'
 core_version_requirement: ^9 || ^10
-version: '10.2.x'
+version: '10.2.14.x'
 distribution:
   name: YMCA Website Services
   install:
@@ -11,7 +11,6 @@ php: 8.1
 # Required modules
 dependencies:
   # Core modules.
-  # - drupal:dblog
   - drupal:action
   - drupal:block_content
   - drupal:breakpoint
@@ -24,7 +23,6 @@ dependencies:
   - drupal:datetime
   - drupal:datetime_range
   - drupal:editor
-  # - drupal:entity_reference
   - drupal:file
   - drupal:help
   - drupal:history
@@ -37,8 +35,6 @@ dependencies:
   - drupal:options
   - drupal:path
   - drupal:path_alias
-  # - drupal:quickedit
-  # - drupal:rdf
   - drupal:shortcut
   - drupal:system
   - drupal:taxonomy
@@ -55,12 +51,9 @@ dependencies:
   - admin_toolbar:admin_toolbar_tools
   - captcha:captcha
   - ckeditor_bootstrap_buttons:ckeditor_bootstrap_buttons
-  # - config_import:config_import
   - editor_advanced_link:editor_advanced_link
   - features:features
-  # - fontyourface:fontyourface
   - image_captcha:image_captcha
-  # - local_fonts:local_fonts
   - link_attributes:link_attributes
   - metatag:metatag
   - metatag_open_graph:metatag_open_graph
