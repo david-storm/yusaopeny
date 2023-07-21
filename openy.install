@@ -1235,40 +1235,8 @@ function openy_update_8092() {
 }
 
 /**
- * Exorcise deprecated modules in case they didn't get uninstalled previously.
+ * Enable ckeditor5 module.
  */
 function openy_update_8093() {
-  $modules = ['geysir', 'openy_inline_editing', 'quickedit', 'rdf'];
-
-  // Get core.extension from the config store.
-  $extensions = \Drupal::database()->select('config')
-    ->fields('config', ['data'])
-    ->condition('collection', '')
-    ->condition('name', 'core.extension')
-    ->execute()
-    ->fetchField();
-  $extensions = unserialize($extensions);
-
-  foreach ($modules as $module) {
-    // Remove each removed module's entry from core.extension.
-    if (isset($extensions['module'][$module])) {
-      unset($extensions['module'][$module]);
-    }
-
-    // Remove any associated config files.
-    \Drupal::database()->delete('config')
-      ->condition('name', $module . '%', 'LIKE')
-      ->execute();
-  }
-
-  // Re-import the updated core.extension.
-  \Drupal::database()->update('config')
-    ->fields([
-      'data' => serialize($extensions),
-    ])->condition('name', 'core.extension')->execute();
-
-  // Remove the modules from key_value.
-  \Drupal::database()->delete('key_value')
-    ->condition('name', $modules, 'IN')
-    ->execute();
+  \Drupal::service('module_installer')->install(['ckeditor5']);
 }
