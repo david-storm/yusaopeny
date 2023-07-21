@@ -217,10 +217,6 @@
             "url": "https://github.com/open-y-subprojects/openy_docs"
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/YCloudYUSA/useless_machines"
-        },
-        {
             "type": "package",
             "package": {
                 "name": "library-ckeditor/colorbutton",
