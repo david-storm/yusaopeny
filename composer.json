@@ -307,7 +307,8 @@
         "drupal-lenient": {
             "allowed-list": [
                 "drupal/easy_breadcrumb",
-                "drupal/entity_embed"
+                "drupal/entity_embed",
+                "drupal/commerce_cart_api"
             ]
         },
         "drupal-scaffold": {
