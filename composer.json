@@ -308,7 +308,8 @@
             "allowed-list": [
                 "drupal/easy_breadcrumb",
                 "drupal/entity_embed",
-                "drupal/commerce_cart_api"
+                "drupal/commerce_cart_api",
+                "drupal/ckeditor_bootstrap_buttons"
             ]
         },
         "drupal-scaffold": {
