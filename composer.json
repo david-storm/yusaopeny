@@ -391,6 +391,9 @@
             },
             "drupal/ckeditor5_font": {
                 "Issue #3350333: TypeError: array_filter(): Argument #1 ($array) must be of type array.": "https://www.drupal.org/files/issues/2023-04-21/3350333-5.patch"
+            },
+          "drupal/ckeditor_bootstrap_buttons": {
+                "Issue #3308035: Drupal 10 & CKEditor 5 Support.": "https://git.drupalcode.org/project/ckeditor_bootstrap_buttons/-/merge_requests/4.patch"
             }
         }
     },
