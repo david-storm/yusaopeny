@@ -57,6 +57,7 @@ function openy_update_dependencies() {
   $dependencies['y_lb'] = [
     9005 => [
       'openy' => 8093,
+      'openy_editor' => 9002,
     ],
   ];
 
