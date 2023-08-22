@@ -1244,8 +1244,8 @@ function openy_update_8092() {
  * Enable ckeditor5 module.
  */
 function openy_update_8093() {
-    // Redo the above update in case folks missed it since we're rewriting history.
-    openy_update_8092();
+  // Redo the above update in case folks missed it since we're rewriting history.
+  openy_update_8092();
 }
 
 /**
