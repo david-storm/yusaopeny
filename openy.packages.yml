@@ -71,6 +71,14 @@ y_layout_builder:
   - ws_lb_tabs
   - lb_testimonials
   - lb_webform
+  - y_camp
+  - y_facility
+  - y_lb_main_menu_cta_block
+  - ws_home_branch
+  - layout_builder_restrictions_by_region
+  - lb_activity_finder
+  - lb_grid_icon
+  
 
 editorial:
   name: 'Editorial'
