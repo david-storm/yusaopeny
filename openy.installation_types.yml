@@ -6,6 +6,7 @@ standard:
     - news
     - seo
     - webform
+    - y_layout_builder
 
 extended:
   name: Extended
@@ -23,6 +24,7 @@ extended:
     - seo
     - search
     - webform
+    - y_layout_builder
 
 complete:
   name: Complete/Developer
