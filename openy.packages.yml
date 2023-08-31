@@ -395,3 +395,10 @@ activity_finder:
     - openy_activity_finder
     - openy_prgf_activity_finder_4
     - lb_activity_finder
+    
+home_branch:
+  name: 'Home Branch'
+  description: 'Home Branch personalisation package'
+  help: 'Allows end user to choose favorite branch in order to get personalized experience across the site'
+  modules:
+    - ws_home_branch
