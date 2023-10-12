@@ -180,6 +180,7 @@ function openy_demo_content_configs_map($key = NULL) {
       'openy_demo_bsimple',
       'openy_demo_bamenities',
       'openy_demo_tfitness',
+      'y_lb_demo_content'
     ],
     'standard' => [
       'openy_demo_nalert',
