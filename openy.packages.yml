@@ -373,6 +373,7 @@ demo:
     - openy_demo_tnews
     - openy_demo_webform
     - y_lb_demo_content
+    - y_lb_init_demo_content
 
 integration:
   name: 'Continuous Integration'
