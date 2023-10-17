@@ -181,7 +181,6 @@ function openy_demo_content_configs_map($key = NULL) {
       'openy_demo_bamenities',
       'openy_demo_tfitness',
       'y_lb_demo_content',
-      'y_lb_init_demo_content'
     ],
     'standard' => [
       'openy_demo_nalert',
@@ -217,7 +216,6 @@ function openy_demo_content_configs_map($key = NULL) {
       'openy_demo_bamenities',
       'openy_demo_taxonomy',
       'y_lb_demo_content',
-      'y_lb_init_demo_content'
     ],
 
   ];
