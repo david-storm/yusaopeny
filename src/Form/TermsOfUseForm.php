@@ -15,7 +15,7 @@ class TermsOfUseForm extends FormBase {
   /**
    * The current version of Terms of Use.
    */
-  const TERMS_OF_USE_VERSION = '2.1';
+  const TERMS_OF_USE_VERSION = '2.2';
 
   /**
    * The Messenger service.
@@ -114,6 +114,38 @@ class TermsOfUseForm extends FormBase {
       '#disabled' => ($isAccepted) ? 1 : 0,
     ];
 
+    $form['exclusive_property'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t("All demonstration content, including but not limited to text, images, graphics, videos, audio, and any other materials displayed on this website, is the exclusive property of YMCA of the USA. The demonstration content is provided solely for illustrative purposes and to showcase the capabilities of YMCA's Website Service. <b>Nonetheless, YMCA member associations may use demonstration content for its website, as applicable</b>"),
+      '#default_value' => ($isAccepted) ? 1 : 0,
+      '#weight' => 5,
+      '#disabled' => ($isAccepted) ? 1 : 0,
+    ];
+
+    $form['respect_ownership'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t("By accessing and/or using this website, you agree to respect the ownership and intellectual property rights of YMCA of the USA over the demonstration content. Users and visitors are strictly prohibited from reproducing, distributing, modifying, or otherwise using the demonstration content without explicit written permission from YMCA of the USA."),
+      '#default_value' => ($isAccepted) ? 1 : 0,
+      '#weight' => 5,
+      '#disabled' => ($isAccepted) ? 1 : 0,
+    ];
+
+    $form['unauthorized_use_misuse'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t("Any unauthorized use or misuse of the demonstration content is a violation of these Terms and Conditions and may be subject to applicable laws and regulations, result in your access being revoked, and/or legal action taken, if applicable."),
+      '#default_value' => ($isAccepted) ? 1 : 0,
+      '#weight' => 5,
+      '#disabled' => ($isAccepted) ? 1 : 0,
+    ];
+
+    $form['right_change_modify_content'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t("YMCA of the USA reserves the right to change, modify, or remove the demonstration content from the website at any time without prior notice. We are not responsible for any inaccuracies or errors in the demonstration content and make no guarantees about its accuracy or completeness."),
+      '#default_value' => ($isAccepted) ? 1 : 0,
+      '#weight' => 5,
+      '#disabled' => ($isAccepted) ? 1 : 0,
+    ];
+
     $form['agree_openy_terms'] = [
       '#type' => 'hidden',
       '#weight' => 6,
@@ -136,6 +168,14 @@ class TermsOfUseForm extends FormBase {
             [':input[name="acknowledge"]' => ['checked' => FALSE]],
             'and',
             [':input[name="obtaining"]' => ['checked' => FALSE]],
+            'and',
+            [':input[name="exclusive_property"]' => ['checked' => FALSE]],
+            'and',
+            [':input[name="respect_ownership"]' => ['checked' => FALSE]],
+            'and',
+            [':input[name="unauthorized_use_misuse"]' => ['checked' => FALSE]],
+            'and',
+            [':input[name="right_change_modify_content"]' => ['checked' => FALSE]],
           ],
         ],
       ];
