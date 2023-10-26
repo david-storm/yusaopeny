@@ -116,7 +116,7 @@ class TermsOfUseForm extends FormBase {
 
     $form['exclusive_property'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t("All demonstration content, including but not limited to text, images, graphics, videos, audio, and any other materials displayed on this website, is the exclusive property of YMCA of the USA. The demonstration content is provided solely for illustrative purposes and to showcase the capabilities of YMCA's Website Service. <b>Nonetheless, YMCA member associations may use demonstration content for its website, as applicable</b>"),
+      '#title' => $this->t("All demonstration content, including but not limited to text, images, graphics, videos, audio, and any other materials displayed on this website, is the exclusive property of YMCA of the USA. The demonstration content is provided solely for illustrative purposes and to showcase the capabilities of YMCA's Website Service. <b>Nonetheless, YMCA member associations may use demonstration content for their websites, as applicable.</b>"),
       '#default_value' => ($isAccepted) ? 1 : 0,
       '#weight' => 5,
       '#disabled' => ($isAccepted) ? 1 : 0,
