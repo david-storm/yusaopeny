@@ -380,7 +380,8 @@
                 "2647312 - Use SubFormState in plugin selectors": "https://www.drupal.org/files/issues/2020-07-22/2647312-32.patch"
             },
             "drupal/video_embed_field": {
-                "Issue #3215817: Presentational attributes such as 'border', 'align', or 'bgcolor' are used. CSS should be used for styling instead.": "https://git.drupalcode.org/project/video_embed_field/-/merge_requests/3.diff"
+                "Issue #3215817: Presentational attributes such as 'border', 'align', or 'bgcolor' are used. CSS should be used for styling instead.": "https://git.drupalcode.org/project/video_embed_field/-/merge_requests/3.diff",
+                "Add support for Ckeditor 5, see https://www.drupal.org/project/video_embed_field/issues/3311063#comment-15227318": "https://www.drupal.org/files/issues/2023-09-12/3311063-35.patch"
             },
             "drupal/entity_clone": {
                 "3050027: Entity clone does not work properly with Layout Builder block": "https://git.drupalcode.org/project/entity_clone/-/merge_requests/42.diff"
