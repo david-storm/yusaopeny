@@ -390,6 +390,9 @@
             },
             "drupal/ckeditor5_font": {
                 "Issue #3350333: TypeError: array_filter(): Argument #1 ($array) must be of type array.": "https://www.drupal.org/files/issues/2023-04-21/3350333-5.patch"
+            },
+            "ynorth-projects/openy_repeat": {
+                "Fix for openy_repeat so it can be used as a Schedules page filter https://yusa.atlassian.net/browse/DS-1100": "https://github.com/ynorth-projects/openy_repeat/compare/9.x-2.x...seattleymca:YGSSLA-396.diff"
             }
         }
     },
