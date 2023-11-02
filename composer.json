@@ -158,7 +158,7 @@
         "symfony/dom-crawler": "^6.2",
         "ycloudyusa/useless_machines": "dev-main",
         "ycloudyusa/y_lb": ">=2.5.1, <2.6.0",
-        "ycloudyusa/y_lb_demo_content": "^1 || dev-main",
+        "ycloudyusa/y_lb_demo_content": "v2.x-dev",
         "ycloudyusa/yusaopeny_activity_finder": "^4.0",
         "ymcatwincities/ymca_sync": "^8 || ^10",
         "ynorth-projects/openy_node_session": "^2.0",
