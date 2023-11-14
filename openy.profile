@@ -393,7 +393,7 @@ function openy_set_frontpage(array &$install_state) {
   $query = \Drupal::entityQuery('node')
     ->accessCheck(FALSE)
     ->condition('status', 1)
-    ->condition('title', 'YMCA Website Services');
+    ->condition('title', 'Demo - Home Page');
   $nids = $query->execute();
   $config_factory = Drupal::configFactory();
   $config_factory->getEditable('system.site')->set('page.front', '/node/' . reset($nids))->save();
