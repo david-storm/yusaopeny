@@ -53,7 +53,7 @@ This command will build a project based on the [**Drupal 9/10 development branch
 
 See [a how-to video](https://youtu.be/jRlinjpTl0c) for the whole process of this command usage.
 
-## Development environment
+### Development environment
 
 To get an environment that was configured especially for development with the distribution, remove `--no-dev` from the composer command.
 
@@ -66,14 +66,14 @@ cd MY_PROJECT
 
 See [a how-to video](https://youtu.be/jRlinjpTl0c) for the whole process of this command usage.
 
-### Docksal
+#### Docksal
 [Docksal](http://docksal.io) is a tool for defining and managing development environments.
 
 - [How to develop](https://github.com/ymcatwincities/openy-docksal#how-to-develop)
   
 Read more details on [Docksal](https://github.com/ymcatwincities/openy-docksal) repo.
 
-## Drupal install
+### Drupal install
 
 The distribution has a full user interface for step-by-step installation. Simply visit your site after building your dev environment to be taken through the installation process.
 
@@ -85,7 +85,7 @@ For example, a "complete" install with the "Carnation" theme might look like:
 drush -vy si openy openy_configure_profile.preset=complete openy_theme_select.theme=openy_carnation openy_terms_of_use.agree_openy_terms=1 install_configure_form.enable_update_status_emails=NULL --account-name=admin --site-name='YMCA Website Services sandbox'
 ```
 
-# Use Fork for the development
+## Use Fork for the development
 
 All development happens in the [Website Services Drupal 9/10 installation profile](https://github.com/ycloudyusa/yusaopeny). To start development:
 
@@ -118,7 +118,7 @@ All development happens in the [Website Services Drupal 9/10 installation profil
 4. Run `composer update` to update packages
 5. Add and commit changes in `docroot/profiles/contrib/openy`. Now it should be pointed to your fork.
 
-# Directory structure
+## Directory structure
 
 | Directory | Purpose |
 |-----------|---------|
@@ -138,7 +138,10 @@ All development happens in the [Website Services Drupal 9/10 installation profil
 | `.docksal/` | Docksal configuration |
 | `build.sh` | Build script for Docksal environment |
 
-# Documentation
+## Documentation
+
 Documentation about Website Services is available at [docs](https://github.com/YCloudYUSA/yusaopeny_docs). For details please visit [https://ycloud.y.org/open-y-association-websites](https://ycloud.y.org/open-y-association-websites).
-# License
+
+## License
+
 Y USA OpenY Project is licensed under the [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0-standalone.en.html). See the [License file](https://github.com/YCloudYUSA/yusaopeny-project/blob/9.2.x/LICENSE) for details.
