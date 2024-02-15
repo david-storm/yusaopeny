@@ -391,6 +391,9 @@
             "drupal/inline_entity_form": {
                 "Issue #3403113: fixed save sub-block": "https://git.drupalcode.org/project/inline_entity_form/-/merge_requests/94.diff",
                 "Issue #3398615: Save is broken in modal": "https://git.drupalcode.org/project/inline_entity_form/-/merge_requests/95.diff"
+            },
+            "drupal/responsive_favicons": {
+                "Issue #3376766: Incorrect path if Drupal is installed in subfolder": "https://git.drupalcode.org/project/responsive_favicons/-/merge_requests/6.diff"
             }
         }
     },
