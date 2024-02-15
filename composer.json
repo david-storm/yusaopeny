@@ -88,6 +88,7 @@
         "drupal/rabbit_hole": "^1.0 || ^1.0@beta",
         "drupal/recaptcha": "^3",
         "drupal/redirect": "^1",
+        "drupal/responsive_favicons": "^2.0",
         "drupal/scheduler": "^2 || ^2.0@RC",
         "drupal/search_api": "1.17 || ^1.19",
         "drupal/search_api_solr": "^4.1",
